@@ -1,0 +1,156 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  border: 0;
+  background: none;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  /* outline: red solid 1px; */
+}
+
+body {
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+svg,
+img {
+  vertical-align: middle;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  font-size: 18px;
+}
+
+:root {
+  --clr-purple-100: hsl(254, 88%, 90%);
+  --clr-purple-500: hsl(256, 67%, 59%);
+
+  --clr-yellow-100: hsl(31, 66%, 93%);
+  --clr-yellow-500: hsl(39, 100%, 71%);
+
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-black: hsl(0, 0%, 7%);
+
+  --fs-regular: 18px;
+
+  --ff-base: "DM Sans", sans-serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  font-family: var(--ff-base);
+  font-size: var(--fs-regular);
+  padding: 1rem;
+  background-color: rgb(236, 236, 236);
+}
+
+.bento-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.bento-box {
+  border-radius: 5%;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.box__1 {
+  color: var(--clr-white);
+  background-color: var(--clr-purple-500);
+  gap: 1rem;
+  padding: 2rem;
+  text-align: center;
+  align-items: center;
+}
+.box__1 h1 {
+  font-size: 3rem;
+}
+
+.box__1 span {
+  color: var(--clr-yellow-500);
+  font-size: 3rem;
+}
+.box__1 img {
+  object-fit: contain;
+  width: 150px;
+}
+
+.box__2 {
+  color: var(--clr-black);
+  background-color: var(--clr-white);
+  font-weight: var(--fw-medium);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.box__2 img {
+  object-fit: contain;
+  max-width: 300px;
+  margin-bottom: 0.5rem;
+}
+
+.box__3 {
+  color: var(--clr-black);
+  background-color: var(--clr-yellow-500);
+}
+
+.box__4 {
+  color: var(--clr-black);
+  background-color: var(--clr-purple-100);
+}
+
+.box__5 {
+  color: var(--clr-white);
+  background-color: var(--clr-purple-500);
+}
+
+.box__6 {
+  color: var(--clr-black);
+  background-color: var(--clr-white);
+}
+
+.box__7 {
+  color: var(--clr-black);
+  background-color: var(--clr-yellow-100);
+}
+
+.box__8 {
+  color: var(--clr-black);
+  background-color: var(--clr-yellow-500);
+}
