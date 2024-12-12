@@ -8,7 +8,7 @@ html {
   margin: 0;
   padding: 0;
   /* font: inherit; */
-  outline: red solid 1px;
+  /* outline: red solid 1px; */
 }
 
 body {
@@ -70,7 +70,8 @@ p {
 }
 
 body {
-  background-color: rgb(236, 236, 236);
+  background-color: black;
+  /* background-color: rgb(236, 236, 236); */
 
   display: grid;
   place-content: center;
@@ -81,7 +82,6 @@ body {
 
 .bento-box {
   max-width: 100%;
-  overflow-wrap: break-word; /* Ensures text doesn't overflow */
   border-radius: 3%;
   line-height: 1;
   padding: 2rem;
@@ -126,17 +126,18 @@ body {
 
 .box__2 img {
   object-fit: contain;
-  max-width: 300px;
-  margin-bottom: 0.5rem;
+  max-width: 70%;
+  margin-bottom: 1.5rem;
 }
 
 .box__3 {
   color: var(--clr-black);
   background-color: var(--clr-yellow-500);
-  padding: 1rem 1rem 0 1rem;
+  padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
 .box__3 h3 {
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -149,10 +150,12 @@ body {
   color: var(--clr-black);
   background-color: var(--clr-purple-100);
   padding: 1rem;
-  align-items: center;
+  justify-items: center;
 }
 
 .box__4 h3 {
+  font-size: 4vw;
+  margin-bottom: 0.5rem;
   padding: 1rem;
 }
 
@@ -171,19 +174,24 @@ body {
   color: var(--clr-white);
   background-color: var(--clr-purple-500);
   padding: 1rem;
-  align-items: center;
 }
 
 .box__5 h2 {
-  margin-bottom: 1rem;
-  text-align: center;
   font-weight: var(--fw-regular);
+  width: 70%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  justify-self: center;
+  text-align: center;
 }
 
 .box__5 img {
+  padding: 1rem;
   object-fit: contain;
+  width: 50%;
   max-width: 250px;
   margin-bottom: 2rem;
+  justify-self: center;
 }
 
 .box__6 {
@@ -228,16 +236,16 @@ body {
 .box__8 {
   color: var(--clr-black);
   background-color: var(--clr-yellow-500);
-  padding: 1.5rem;
 }
 
 .box__8 h2 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .box__8 img {
   object-fit: contain;
-  width: 200px;
+  width: 80%;
+  max-width: 350px;
 }
 
 .bento-grid {
@@ -255,7 +263,7 @@ body {
     "eight";
 
   padding-block: 2rem;
-  width: min(85%, 100rem);
+  width: min(90%, 70rem);
   margin-inline: auto;
 }
 
@@ -284,17 +292,107 @@ body {
   grid-area: eight;
 }
 
-@media (min-width: 45em) {
+@media (min-width: 50em) {
+  body {
+    background-color: rgb(236, 236, 236);
+  }
+
+  .box__1 h1 {
+    font-size: 4rem;
+  }
+  .box__1 span:first-of-type {
+    font-size: 4rem;
+  }
+
+  .box__2 img {
+    object-fit: contain;
+    max-width: 100%;
+  }
+
+  .box__2 h3 {
+    font-size: 2rem;
+  }
+
+  .box__3 img {
+    object-fit: contain;
+    max-width: 60%;
+  }
+
+  .box__3 h3 {
+    font-size: 2rem;
+  }
+
+  .box__4 h3 {
+    font-size: 2rem;
+  }
+
+  .box__4 p {
+    font-size: 1.5rem;
+    text-align: start;
+    padding: 2rem;
+  }
+
+  .box__4 img {
+    width: 90%;
+    max-width: 100%;
+  }
+
+  .box__5 {
+    display: flex;
+    align-items: center;
+  }
+
+  .box__5 h2 {
+    font-size: 3rem;
+    text-align: start;
+  }
+
+  .box__5 img {
+    width: 40%;
+    max-width: 60%;
+  }
+
+  .box__6 img {
+    width: 60%;
+    max-width: 60%;
+  }
+
+  .box__6 p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .box__6 h1 {
+    font-size: 4.5rem;
+    font-weight: var(--fw-medium);
+  }
+
+  .box__7 h2 {
+    font-size: 3rem;
+  }
+
+  .box__8 h2 {
+    font-size: 3rem;
+  }
+
+  .box__8 img {
+    object-fit: contain;
+    width: 100%;
+    max-width: 130%;
+  }
+
   .bento-grid {
+    display: grid;
     grid-template-areas:
-      "seven one one four"
-      "seven one one four"
-      "eight two three four"
-      "eight six four five";
+      "eight four"
+      "one one"
+      "two three"
+      "five five"
+      "six seven";
   }
 }
 
-@media (min-width: 70em) {
+@media (min-width: 80rem) {
   .bento-grid {
     grid-template-areas:
       "seven one one four"
