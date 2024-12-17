@@ -84,8 +84,6 @@ body {
   border-radius: 3%;
   line-height: 1;
   padding: 2rem;
-  /* width: min(80%, 70rem); */
-  /* margin-block: auto; */
 }
 
 .box__1 {
@@ -334,7 +332,7 @@ body {
   .box__4 p {
     font-size: 1.5rem;
     text-align: start;
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .box__4 img {
@@ -399,17 +397,18 @@ body {
 
 /** Technically not asked bento grid, but does the job. Try with grid-template-columns: repeat (4, 1fr);and grid-column / grid-row: span2 etc. */
 
-@media (min-width: 85rem) {
+@media (min-width: 85em) {
   body {
     background-color: red;
   }
 
   .box__1 h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
   }
 
   .box__1 span:first-of-type {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   .box__2 img {
@@ -423,26 +422,31 @@ body {
 
   .box__3 img {
     object-fit: contain;
-    max-width: 60%;
+    max-width: 100%;
   }
 
   .box__3 h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .box__4 h3 {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   .box__4 p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: start;
-    padding: 2rem;
+    /* padding: 2rem; */
+  }
+  .box__4 {
+    overflow: hidden;
   }
 
   .box__4 img {
-    width: 90%;
-    max-width: 100%;
+    position: relative;
+    width: 180%;
+    max-width: 300%;
+    right: -105px;
   }
 
   .box__5 {
@@ -451,46 +455,44 @@ body {
   }
 
   .box__5 h2 {
-    font-size: 3rem;
+    font-size: 1.7rem;
     text-align: start;
   }
 
   .box__5 img {
-    width: 40%;
-    max-width: 60%;
+    width: 45%;
+    margin-bottom: 0;
   }
 
   .box__6 img {
-    width: 60%;
-    max-width: 60%;
+    width: 70%;
   }
 
   .box__6 p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
   }
 
   .box__6 h1 {
-    font-size: 4.5rem;
+    font-size: 3rem;
     font-weight: var(--fw-medium);
   }
 
   .box__7 h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .box__8 h2 {
-    font-size: 3rem;
-  }
-
-  .box__8 h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
   }
 
   .box__8 img {
-    object-fit: contain;
-    width: 100%;
-    max-width: 130%;
+    position: relative;
+    justify-self: center;
+    align-items: end;
+    width: 120%;
+    height: auto;
   }
 
   .bento-grid {
