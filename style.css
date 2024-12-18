@@ -150,6 +150,7 @@ body {
 }
 
 .box__4 {
+  display: grid;
   color: var(--clr-black);
   background-color: var(--clr-purple-100);
   padding: 1rem;
@@ -174,9 +175,11 @@ body {
 }
 
 .box__5 {
+  display: grid;
   color: var(--clr-white);
   background-color: var(--clr-purple-500);
   padding: 1rem;
+  justify-items: center;
 }
 
 .box__5 h2 {
@@ -189,11 +192,10 @@ body {
 }
 
 .box__5 img {
-  padding: 1rem;
   object-fit: contain;
+  padding: 1rem;
   width: 60%;
   margin-bottom: 2rem;
-  justify-self: center;
 }
 
 .box__6 {
