@@ -157,7 +157,7 @@ body {
 }
 
 .box__4 h3 {
-  font-size: 4vw;
+  font-size: 1.3rem;
   margin-bottom: 0.5rem;
   padding: 1rem;
 }
@@ -191,8 +191,7 @@ body {
 .box__5 img {
   padding: 1rem;
   object-fit: contain;
-  width: 50%;
-  max-width: 250px;
+  width: 60%;
   margin-bottom: 2rem;
   justify-self: center;
 }
@@ -253,6 +252,7 @@ body {
 
 .bento-grid {
   display: grid;
+  place-content: center;
   gap: 2rem;
   grid-auto-columns: 1fr;
   grid-template-areas:
@@ -296,10 +296,6 @@ body {
 }
 
 @media (min-width: 40em) {
-  body {
-    background-color: rgb(236, 236, 236);
-  }
-
   .box__1 h1 {
     font-size: 4rem;
   }
@@ -322,7 +318,7 @@ body {
   }
 
   .box__3 h3 {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
 
   .box__4 h3 {
@@ -398,10 +394,6 @@ body {
 /** Technically not asked bento grid, but does the job. Try with grid-template-columns: repeat (4, 1fr);and grid-column / grid-row: span2 etc. */
 
 @media (min-width: 85em) {
-  body {
-    background-color: red;
-  }
-
   .box__1 h1 {
     font-size: 3.5rem;
     margin-bottom: 4rem;
@@ -420,9 +412,16 @@ body {
     font-size: 2rem;
   }
 
+  .box__3 {
+    overflow: hidden;
+  }
+
   .box__3 img {
+    position: relative;
+    justify-self: center;
     object-fit: contain;
     max-width: 100%;
+    bottom: -50px;
   }
 
   .box__3 h3 {
@@ -436,8 +435,8 @@ body {
   .box__4 p {
     font-size: 1rem;
     text-align: start;
-    /* padding: 2rem; */
   }
+
   .box__4 {
     overflow: hidden;
   }
@@ -460,12 +459,12 @@ body {
   }
 
   .box__5 img {
-    width: 45%;
+    width: 35%;
     margin-bottom: 0;
   }
 
   .box__6 img {
-    width: 70%;
+    min-width: 80%;
   }
 
   .box__6 p {
@@ -496,6 +495,7 @@ body {
   }
 
   .bento-grid {
+    padding-block: 5rem;
     grid-template-areas:
       "seven one one four "
       "seven one one four"
